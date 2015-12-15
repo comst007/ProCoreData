@@ -208,6 +208,14 @@
                                     <outlet property="delegate" destination="Ah7-4n-0Wa" id="Wcv-Gy-Djp"/>
                                 </connections>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYB-bn-898">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="88" y="224" width="97" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -221,6 +229,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="dqD-3b-K8B"/>
+                                <exclude reference="sYB-bn-898"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2Ja-Um-CBc"/>
@@ -231,6 +240,7 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="dqD-3b-K8B"/>
+                                <include reference="sYB-bn-898"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2Ja-Um-CBc"/>

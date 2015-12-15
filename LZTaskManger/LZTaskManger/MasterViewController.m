@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 #import "LZAddTaskViewController.h"
+#import "AppDelegate.h"
 @interface MasterViewController ()
 
 @end
@@ -21,6 +22,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:self.managedObjectContext];
+    
+    NSLog(@"userinfo: %@", [entity userInfo]);
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
@@ -193,6 +197,7 @@
             [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
     }
+    
 }
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller

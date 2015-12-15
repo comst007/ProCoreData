@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB3454A41C20829D000F0877 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3454A31C20829D000F0877 /* Product.m */; };
 		CBB1A46D1C1B37FF0076752E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB1A46C1C1B37FF0076752E /* main.m */; };
 		CBB1A4701C1B37FF0076752E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB1A46F1C1B37FF0076752E /* AppDelegate.m */; };
 		CBB1A4731C1B37FF0076752E /* LZTaskManger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBB1A4711C1B37FF0076752E /* LZTaskManger.xcdatamodeld */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB3454A21C20829D000F0877 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		CB3454A31C20829D000F0877 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		CBB1A4671C1B37FF0076752E /* LZTaskManger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZTaskManger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB1A46B1C1B37FF0076752E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBB1A46C1C1B37FF0076752E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				CBB1A47D1C1B37FF0076752E /* Images.xcassets */,
 				CBB1A47F1C1B37FF0076752E /* LaunchScreen.xib */,
 				CBB1A4711C1B37FF0076752E /* LZTaskManger.xcdatamodeld */,
+				CB3454A21C20829D000F0877 /* Product.h */,
+				CB3454A31C20829D000F0877 /* Product.m */,
 				CBB1A46A1C1B37FF0076752E /* Supporting Files */,
 				CBB1A4961C1B48CF0076752E /* LZAddTaskViewController.h */,
 				CBB1A4971C1B48CF0076752E /* LZAddTaskViewController.m */,
@@ -232,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3454A41C20829D000F0877 /* Product.m in Sources */,
 				CBB1A4791C1B37FF0076752E /* DetailViewController.m in Sources */,
 				CBB1A4981C1B48CF0076752E /* LZAddTaskViewController.m in Sources */,
 				CBB1A4761C1B37FF0076752E /* MasterViewController.m in Sources */,
@@ -432,6 +438,7 @@
 				CBB1A4921C1B37FF0076752E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBB1A4931C1B37FF0076752E /* Build configuration list for PBXNativeTarget "LZTaskMangerTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +447,7 @@
 				CBB1A4951C1B37FF0076752E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
