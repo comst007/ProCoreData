@@ -26,7 +26,7 @@
         <!--Edit Text Table View Controller-->
         <scene sceneID="gF2-e1-pgA">
             <objects>
-                <tableViewController id="cn5-05-mw2" customClass="LZEditTextTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="editTextVC" id="cn5-05-mw2" customClass="LZEditTextTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Nqf-Jo-u6W">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +158,33 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjV-cN-QaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-72" y="285"/>
+            <point key="canvasLocation" x="-84" y="129"/>
+        </scene>
+        <!--Edit Location Table View Controller-->
+        <scene sceneID="rbF-bd-Vfi">
+            <objects>
+                <tableViewController id="ZvU-PJ-UA5" customClass="LZEditLocationTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vYB-4y-MYw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationCell" id="Rlg-c3-xtT">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rlg-c3-xtT" id="X9V-59-UgW">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZvU-PJ-UA5" id="E7O-Tn-rc7"/>
+                            <outlet property="delegate" destination="ZvU-PJ-UA5" id="7Dr-1Y-fGk"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OB9-5z-AWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="791"/>
         </scene>
         <!--Master-->
         <scene sceneID="VgW-fR-Quf">
@@ -330,6 +356,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ZvU-PJ-UA5" kind="show" identifier="editLocation" id="ozv-MO-ykb"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="tRX-WC-6yk" style="IBUITableViewCellStyleDefault" id="oMA-X2-G3I">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -376,7 +405,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eaP-sB-zgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-824" y="255"/>
+            <point key="canvasLocation" x="-830" y="653"/>
         </scene>
     </scenes>
 </document>

@@ -20,6 +20,7 @@
 		CB3454E91C209B3C000F0877 /* LZTaskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3454E81C209B3C000F0877 /* LZTaskTableViewController.m */; };
 		CB3454F01C20A7A0000F0877 /* LZEditTextTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3454EF1C20A7A0000F0877 /* LZEditTextTableViewController.m */; };
 		CB3454F31C20AD38000F0877 /* LZEditPriorityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3454F21C20AD38000F0877 /* LZEditPriorityTableViewController.m */; };
+		CB3454F61C20B2F4000F0877 /* LZEditLocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3454F51C20B2F4000F0877 /* LZEditLocationTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		CB3454EF1C20A7A0000F0877 /* LZEditTextTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZEditTextTableViewController.m; sourceTree = "<group>"; };
 		CB3454F11C20AD38000F0877 /* LZEditPriorityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZEditPriorityTableViewController.h; sourceTree = "<group>"; };
 		CB3454F21C20AD38000F0877 /* LZEditPriorityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZEditPriorityTableViewController.m; sourceTree = "<group>"; };
+		CB3454F41C20B2F4000F0877 /* LZEditLocationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZEditLocationTableViewController.h; sourceTree = "<group>"; };
+		CB3454F51C20B2F4000F0877 /* LZEditLocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZEditLocationTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 				CB3454EF1C20A7A0000F0877 /* LZEditTextTableViewController.m */,
 				CB3454F11C20AD38000F0877 /* LZEditPriorityTableViewController.h */,
 				CB3454F21C20AD38000F0877 /* LZEditPriorityTableViewController.m */,
+				CB3454F41C20B2F4000F0877 /* LZEditLocationTableViewController.h */,
+				CB3454F51C20B2F4000F0877 /* LZEditLocationTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			files = (
 				CB3454E51C209809000F0877 /* Task.m in Sources */,
 				CB3454BD1C208571000F0877 /* MasterViewController.m in Sources */,
+				CB3454F61C20B2F4000F0877 /* LZEditLocationTableViewController.m in Sources */,
 				CB3454F31C20AD38000F0877 /* LZEditPriorityTableViewController.m in Sources */,
 				CB3454F01C20A7A0000F0877 /* LZEditTextTableViewController.m in Sources */,
 				CB3454B71C208571000F0877 /* AppDelegate.m in Sources */,

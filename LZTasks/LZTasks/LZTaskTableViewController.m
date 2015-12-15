@@ -9,6 +9,7 @@
 #import "LZTaskTableViewController.h"
 #import "LZEditTextTableViewController.h"
 #import "LZEditPriorityTableViewController.h"
+#import "LZEditLocationTableViewController.h"
 
 @interface LZTaskTableViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
@@ -125,6 +126,13 @@
         LZEditPriorityTableViewController *priorityVC = (LZEditPriorityTableViewController *)segue.destinationViewController;
         priorityVC.context = self.context;
         priorityVC.currentTask = self.currentTask;
+    }
+    
+    if ([segue.identifier isEqualToString:@"editLocation"]) {
+        LZEditLocationTableViewController *editLocationVC = segue.destinationViewController;
+        
+        editLocationVC.context = self.context;
+        editLocationVC.currentTask = self.currentTask;
     }
 }
 #pragma mark - Table view data source
