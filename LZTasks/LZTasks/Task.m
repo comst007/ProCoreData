@@ -18,7 +18,7 @@
 @dynamic text;
 @dynamic location;
 @dynamic highPriTasks;
-
+@dynamic soonerTasks;
 - (NSNumber *)isOverdue{
     
     NSComparisonResult isTaskOverdue;

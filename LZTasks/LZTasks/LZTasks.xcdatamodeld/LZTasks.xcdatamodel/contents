@@ -15,11 +15,14 @@
         <fetchedProperty name="highPriTasks" optional="YES" syncable="YES">
             <fetchRequest name="fetchedPropertyFetchRequest" entity="Task" predicateString="priority == 3"/>
         </fetchedProperty>
+        <fetchedProperty name="soonerTasks" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Task" predicateString="dueDate &lt; $FETCH_SOURCE.dueDate"/>
+        </fetchedProperty>
         <userInfo/>
     </entity>
     <fetchRequest name="tasksDueSooner" entity="Task" predicateString="dueDate &lt; $DUE_DATE"/>
     <elements>
-        <element name="Task" positionX="261" positionY="189" width="128" height="146"/>
+        <element name="Task" positionX="261" positionY="189" width="128" height="161"/>
         <element name="Location" positionX="540" positionY="315" width="128" height="73"/>
     </elements>
 </model>

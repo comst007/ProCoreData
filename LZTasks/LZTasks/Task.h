@@ -19,4 +19,5 @@
 @property (nonatomic, retain) NSString * text;
 @property (nonatomic, retain) Location *location;
 @property (nonatomic, strong) NSArray *highPriTasks;
+@property (nonatomic, strong) NSArray *soonerTasks;
 @end

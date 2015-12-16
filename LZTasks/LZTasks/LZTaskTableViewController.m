@@ -11,6 +11,7 @@
 #import "LZEditPriorityTableViewController.h"
 #import "LZEditLocationTableViewController.h"
 #import "LZEditDateViewController.h"
+#import "AppDelegate.h"
 
 @interface LZTaskTableViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
@@ -145,8 +146,39 @@
 }
 #pragma mark - Table view data source
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    if (indexPath.row == 4) {
+        NSArray *array = self.currentTask.highPriTasks;
+        
+        for (Task *task in array) {
+            NSLog(@"---%@", task.text);
+        }
+    }
+    if (indexPath.row == 5) {
+        
+        [self fetchSoomerTasks];
+//        NSArray *array = self.currentTask.soonerTasks;
+//        
+//        for (Task *task in array) {
+//            NSLog(@"++++%@", task.text);
+//        }
+    }
+}
 
-
+- (void)fetchSoomerTasks{
+    AppDelegate *appD = [UIApplication sharedApplication].delegate;
+    NSManagedObjectModel *model = [appD managedObjectModel];
+    
+    NSFetchRequest *request = [model fetchRequestFromTemplateWithName:@"tasksDueSooner" substitutionVariables:@{@"DUE_DATE":self.currentTask.dueDate}];
+    
+    NSArray *array = [self.context executeFetchRequest:request error:nil];
+    
+    for (Task *task in array) {
+        NSLog(@"++++%@", task.text);
+    }
+}
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
