@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ColorComponent" representedClassName="ColorComponent" syncable="YES">
+        <attribute name="alpha" optional="YES" attributeType="Double" defaultValueString="0.5" syncable="YES"/>
+        <attribute name="blue" attributeType="Double" defaultValueString="0.7" syncable="YES"/>
+        <attribute name="green" attributeType="Double" defaultValueString="0.5" syncable="YES"/>
+        <attribute name="red" attributeType="Double" defaultValueString="0.5" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ColorComponent" positionX="-54" positionY="-9" width="128" height="105"/>
+    </elements>
+</model>
