@@ -10,6 +10,7 @@
 #import "LZEditTextTableViewController.h"
 #import "LZEditPriorityTableViewController.h"
 #import "LZEditLocationTableViewController.h"
+#import "LZEditDateViewController.h"
 
 @interface LZTaskTableViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
@@ -133,6 +134,13 @@
         
         editLocationVC.context = self.context;
         editLocationVC.currentTask = self.currentTask;
+    }
+    
+    if ([segue.identifier isEqualToString:@"editDate"]) {
+        
+        LZEditDateViewController *editDateVC = segue.destinationViewController;
+        editDateVC.currentTask = self.currentTask;
+        editDateVC.context = self.context;
     }
 }
 #pragma mark - Table view data source

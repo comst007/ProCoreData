@@ -72,7 +72,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILG-D9-UR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-124" y="-493"/>
+            <point key="canvasLocation" x="-144" y="-968"/>
         </scene>
         <!--Edit Priority Table View Controller-->
         <scene sceneID="NLg-Fc-Uaa">
@@ -158,7 +158,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjV-cN-QaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-84" y="129"/>
+            <point key="canvasLocation" x="-102" y="-363"/>
         </scene>
         <!--Edit Location Table View Controller-->
         <scene sceneID="rbF-bd-Vfi">
@@ -184,7 +184,79 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OB9-5z-AWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78" y="791"/>
+            <point key="canvasLocation" x="-40" y="29"/>
+        </scene>
+        <!--Edit Date View Controller-->
+        <scene sceneID="1yc-i2-bqu">
+            <objects>
+                <viewController id="PNk-Zf-ESd" customClass="LZEditDateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Ip-Be-SBr"/>
+                        <viewControllerLayoutGuide type="bottom" id="8N1-SM-VD1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jmQ-dc-Uxx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-Km-z5P">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dateCell" textLabel="EUY-fp-5HL" style="IBUITableViewCellStyleDefault" id="6qj-5l-Htc">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6qj-5l-Htc" id="6u8-Cb-4nk">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EUY-fp-5HL">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="PNk-Zf-ESd" id="29V-P8-H4A"/>
+                                    <outlet property="delegate" destination="PNk-Zf-ESd" id="9FJ-dl-vkx"/>
+                                </connections>
+                            </tableView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0kc-p2-Lvp">
+                                <rect key="frame" x="0.0" y="443" width="600" height="162"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.47843137250000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="E3x-AO-qYz"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="471913339.27351898">
+                                    <!--2015-12-15 23:02:19 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="selectDate:" destination="PNk-Zf-ESd" eventType="valueChanged" id="vIA-QZ-URz"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0kc-p2-Lvp" firstAttribute="leading" secondItem="jmQ-dc-Uxx" secondAttribute="leading" id="70J-gt-iaw"/>
+                            <constraint firstItem="6aB-Km-z5P" firstAttribute="top" secondItem="jmQ-dc-Uxx" secondAttribute="top" id="Hip-Zf-Rlv"/>
+                            <constraint firstItem="6aB-Km-z5P" firstAttribute="leading" secondItem="jmQ-dc-Uxx" secondAttribute="leading" id="P0X-Jj-fR1"/>
+                            <constraint firstAttribute="trailing" secondItem="0kc-p2-Lvp" secondAttribute="trailing" id="RsL-Ly-Yxf"/>
+                            <constraint firstItem="8N1-SM-VD1" firstAttribute="top" secondItem="6aB-Km-z5P" secondAttribute="bottom" id="cCY-fA-9an"/>
+                            <constraint firstItem="8N1-SM-VD1" firstAttribute="top" secondItem="0kc-p2-Lvp" secondAttribute="bottom" constant="1" id="lGv-DW-tRC"/>
+                            <constraint firstAttribute="trailing" secondItem="6aB-Km-z5P" secondAttribute="trailing" id="na1-6J-9sr"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="0kc-p2-Lvp" id="EAi-hE-4TP"/>
+                        <outlet property="tv" destination="6aB-Km-z5P" id="LNL-Wk-kSF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RdN-Ve-NXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="696"/>
         </scene>
         <!--Master-->
         <scene sceneID="VgW-fR-Quf">
@@ -336,6 +408,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PNk-Zf-ESd" kind="show" identifier="editDate" id="h1G-8d-pP1"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="1GF-5Y-iv2" detailTextLabel="Yyi-PD-w2I" style="IBUITableViewCellStyleValue2" id="fNt-v5-5sc">
                                         <autoresizingMask key="autoresizingMask"/>
